@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="C:\frontend\css\prodigy task 1\style1.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="C:\frontend\css\prodigy task 1\753958_chefs_cook_food_hat_restaurant_icon.png" alt="Logo" class="logo-image">
+            <span class="logo-text">Foodie</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#bookTable" id="bookTableNav">Book Table</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="delicious-food">Delicious Food</h1>
+            <p class="hero-para">Order fresh and tasty food delivered right to your door.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+            <button class="btn" id="bookTableBtn">Book Table</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <h2>Our Specials</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="C:\frontend\css\prodigy task 1\019162cb-b1d8-74a1-8200-43a683a32dd6.png" alt="Dish 1">
+                <h3>Pasta Delight</h3>
+                <p>$12.99</p>
+                <button class="btn">Order Now</button>
+            </div>
+            <div class="card">
+                <img src="C:\frontend\css\prodigy task 1\Side-View-of-Tandoori-Mushroom-Pizza.jpg" alt="Dish 2">
+                <h3>Pizza Margherita</h3>
+                <p>$10.99</p>
+                <button class="btn">Order Now</button>
+            </div>
+            <div class="card">
+                <img src="C:\frontend\css\prodigy task 1\crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" alt="Dish 3">
+                <h3>Burger Bliss</h3>
+                <p>$8.99</p>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- about Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <img src="images (5).jpeg" alt="Restaurant Image" class="about-image" />
+
+        <p class="about-para">
+            Welcome to <strong>Foodie</strong> – a place where taste meets perfection! Our goal is to deliver the finest dining experience, where each dish is crafted with passion, love, and the freshest ingredients. Whether you're dining in with family, picking up a takeaway, or enjoying home delivery, we aim to create memorable moments with every bite.
+        </p>
+        <p class="about-para">
+            Our chefs bring together flavors from across the world to prepare exquisite meals that cater to all tastes. We believe in serving food that not only delights the palate but also tells a story. With carefully curated seasonal menus and a commitment to quality, Foodie has become a favorite destination for food lovers.
+        </p>
+        <p class="about-para">
+            At Foodie, we’re more than just a restaurant. We strive to build a sense of community by offering event hosting, catering services, and seasonal food festivals. Come and be a part of our journey as we continue to innovate, serve, and grow.
+        </p>
+    </section>
+   
+<!-- Book Table Section -->
+<section id="bookTable" class="booking-section">
+    <div class="book-table">
+    <h2>Book a Table</h2>
+    <div class="booking-form-container"> <!-- New container for the form -->
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="persons">Number of Persons:</label>
+            <input type="number" id="persons" name="persons" required min="1">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit" class="btn">Book Table</button>
+        </form>
+    </div>
+    </div>
+</section>
+<!-- Services Section -->
+<section class="delivery-section">
+    <div class="images-container">
+        <div class="image-box">
+            <img src="images.jpeg" alt="Chef preparing food">
+        </div>
+        <div class="small-images">
+            <img src="images (2).jpeg" alt="Dish">
+            <img src="download.jpeg" alt="Grilled food">
+        </div>
+    </div>
+    <div class="content-container">
+        <h1>Fastest Food Delivery in City</h1>
+        <p>Our visual designer lets you quickly and drag down your way to customapps for both keep desktop.</p>
+        <ul class="features-list">
+            <li><img src="C:\frontend\css\prodigy task 1\3643779_clock_hour_ticker_time_times_icon.png" alt="Clock Icon"> Delivery within 30 minutes</li>
+            <li><img src="3586369_discount_price_sale_icon.png" alt="Price Icon"> Best Offer & Prices</li>
+            <li><img src="1814095_cart_checkout_commerce_shopping cart_icon.png" alt="Cart Icon"> Online Services Available</li>
+        </ul>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Foodie. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+    <script src="script.js"></script> <!-- Link to your new JS file -->
+
+</body>
+</html>
+

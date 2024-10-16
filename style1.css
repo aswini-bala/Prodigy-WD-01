@@ -1,0 +1,547 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6f61;
+  padding: 15px 30px;
+}
+.navbar .logo {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+nav {
+  background-color: #333; /* Background color of the nav bar */
+  padding: 10px; /* Space around the nav bar */
+}
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox for horizontal layout */
+}
+
+nav ul li {
+  margin-right: 20px; /* Space between items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Padding for click area */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Background color on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+/* Navbar Link Styles */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  position: relative; /* Required for the pseudo-element */
+}
+
+.nav-links a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px; /* Adjust padding for a rounded rectangle look */
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 20px; /* Creates rounded corners */
+}
+/* Hover Effect for Nav Links */
+.nav-links a:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+.delicious-food {
+  color: #efefef; /* Tomato color */
+  font-size: 48px; /* Adjust size as needed */
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.hero-para {
+  color: #ffffff; /* Green color */
+  font-size: 18px;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+/* Hero Section with Background Image */
+.hero {
+  background: url('images (1).jpeg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; /* Ensure text is visible */
+  position: relative;
+}
+/* Optional: Overlay for better text contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px; /* Ensure content stays above overlay */
+}
+.hero-content .btn {
+  margin: 10px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center; /* Center buttons horizontally */
+  gap: 10px; /* Space between buttons */
+}
+
+.btn {
+  padding: 10px 20px; /* Adjust padding for all buttons */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+#bookTableBtn {
+  background-color: #f39c12; /* Distinct background color for the Book Table button */
+  color: white; /* Text color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+#bookTableBtn:hover {
+  background-color: #e67e22; /* Darker shade on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+  
+}
+#bookTableBtn {
+  margin-top: 20px; /* Add some space above */
+}
+
+/* Menu Section */
+.menu {
+  padding: 50px;
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+/* Menu Grid Styles */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding-bottom: 20px; 
+}
+
+/* Image Styles for Consistent Size */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures all images are cropped to fit the same size */
+  display: block;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+.btn {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff3d2e;
+}
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.social-links a {
+  color: #ff6f61;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-grid {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar .nav-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .hero h1 {
+      font-size: 36px;
+  }
+
+  .hero p {
+      font-size: 16px;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .testimonial-grid {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+/* Logo and Navbar Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Optional: Makes the logo circular */
+}
+
+.logo-text {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Adjust spacing for small screens */
+@media (max-width: 768px) {
+  .logo-container {
+      justify-content: center;
+  }
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-section {
+  padding: 40px; /* Space around the section */
+  background-color: #f8f8f8; /* Light background color */
+  text-align: center; /* Center text */
+  margin: 20px 0; /* Margin around section */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.booking-form-container {
+  background-color: white; /* White background for the form box */
+  padding: 20px; /* Space inside the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  display: inline-block; /* Keep the box size to the content */
+  max-width: 400px; /* Max width for the box */
+  width: 100%; /* Responsive width */
+}
+
+.booking-section h2 {
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.booking-section form {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: stretch; /* Stretch items to fill the width */
+}
+
+.booking-section label {
+  margin: 10px 0 5px; /* Space around labels */
+}
+
+.booking-section input {
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ccc; /* Border around input fields */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 15px; /* Space below input fields */
+}
+
+.booking-section .btn {
+  background-color: #f39c12; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Padding inside button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.booking-section .btn:hover {
+  background-color: #e67e22; /* Darker shade on hover */
+}
+.delivery-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.images-container {
+    display: flex;
+    gap: 20px;
+}
+
+.image-box {
+    width: 280px;
+    height: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.small-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.small-images img {
+    width: 120px;
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.content-container {
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.features-list img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.features-list li:last-child {
+    margin-bottom: 0;
+}
+.about-section {
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-para {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-para strong {
+  color: #FF6347;
+}
+.
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e5533b;
+}
+.book-table {
+  background-image: url('images (6).jpeg'); /* Path to your high-resolution background image */
+  background-size: cover; /* Or try 'contain' for better quality */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  color: #130303;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color overlay */
+}
